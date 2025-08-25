@@ -1,0 +1,20 @@
+# Robots.txt for Portfolio Website
+
+# Allow all crawlers to access the site
+User-agent: *
+Allow: /
+
+# Disallow admin pages from being crawled
+Disallow: /admin/
+Disallow: /api/
+
+# Allow crawling of API routes that provide public data
+Allow: /api/projects
+Allow: /api/experience
+Allow: /api/skills
+
+# Sitemap location
+Sitemap: https://yourportfolio.com/sitemap.xml
+
+# Crawl delay (optional - be respectful to server resources)
+Crawl-delay: 1
